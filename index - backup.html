@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <title>GL Accounts</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="horizonFlex">
+      <h2>BA ASSOCIATES</h2>
+      <h4>Shaheer</h4>
+    </div>
+    <div class="horizonFlex forWhite">
+      <p class="px18">Accounting with Inventory System</p>
+      <p>Chart of Account</p>
+    </div>
+  </header>
+
+  <div class="accountsGrid">
+    <div class="accMainDiv">
+
+      <div class="control" id="mainControlAccount">
+        <h3 class="px20">
+          Main Control Account
+        </h3>
+        <div class="horizonFlex thDiv">
+          <h5 class="px18 th">Code</h5>
+          <h5 class="px18 th">Account Title of control account</h5>
+        </div>
+        <div class="tableDiv">
+          <table>
+            <tr v-for="data, code in mainControlAccountData">
+              <td style="width: 64px;">{{code}}</td>
+              <td style="width: 285px;">{{data}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="control" id="subControlAccountLev1">
+        <h3 class="px20">
+          Sub Control Account Level - 1
+        </h3>
+        <div class="horizonFlex thDiv">
+          <h5 class="px18 th">Code</h5>
+          <h5 class="px18 th">Account Title of Level - 1</h5>
+        </div>
+        <div class="tableDiv">
+          <table>
+            <tr v-for="data, code in subControlAccountLev1">
+              <td style="width: 64px;">{{code}}</td>
+              <td style="width: 285px;">{{data}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="control" id="subControlAccountLev2">
+        <h3 class="px20">
+          Sub Control Account Level - 2
+        </h3>
+        <div class="horizonFlex thDiv">
+          <h5 class="px18 th">Code</h5>
+          <h5 class="px18 th">Account Title of Level - 2</h5>
+        </div>
+        <div class="tableDiv">
+          <table>
+            <tr v-for="data, code in subControlAccountLev2">
+              <td style="width: 64px;">{{code}}</td>
+              <td style="width: 285px;">{{data}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
